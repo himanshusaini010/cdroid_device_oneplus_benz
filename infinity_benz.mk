@@ -13,6 +13,12 @@ $(call inherit-product, device/oneplus/benz/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
+INFINITY_MAINTAINER := Himanshu
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+
+BYPASS_CHARGE_SUPPORTED := true
+
 PRODUCT_NAME := infinity_benz
 PRODUCT_DEVICE := benz
 PRODUCT_MANUFACTURER := OnePlus
@@ -28,14 +34,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2613 \
     SystemDevice=OP5D3FL1 \
     SystemName=CPH2613
-
-BYPASS_CHARGE_SUPPORTED := true
-
-# Maintainer Name
-INFINITY_MAINTAINER := "Himanshu" (Default: Himanshu)
-
-# Whether the device supports Fingerprint On Display
-TARGET_HAS_UDFPS := true/false (Default: false)
-
-# Whether Including Google Apps
-WITH_GAPPS := true/false (Default: true)
