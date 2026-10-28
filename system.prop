@@ -1,0 +1,4 @@
+# Device Specification
+ro.product.marketname=OnePlus Nord CE4
+ro.infinity.soc=Snapdragon 7 Gen 3
+ro.infinity.camera=50MP + 8MP + 16MP
