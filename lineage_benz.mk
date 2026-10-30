@@ -51,6 +51,9 @@ TARGET_ENABLE_BLUR := true
 # Disable MatLog logging prebuilt
 TARGET_DISABLE_MATLOG := true
 
+# Charging
+BYPASS_CHARGE_SUPPORTED := true
+
 PRODUCT_NAME := lineage_benz
 PRODUCT_DEVICE := benz
 PRODUCT_MANUFACTURER := OnePlus
