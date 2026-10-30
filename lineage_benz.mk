@@ -13,6 +13,44 @@ $(call inherit-product, device/oneplus/benz/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Maintainer name (underscores in values convert to spaces in UI)
+DESCARTES_MAINTAINER := Himanshu_Saini
+
+# Processor / SoC model
+DESCARTES_PROCESSOR := Snapdragon_7_Gen_3
+
+# Battery capacity and technology
+DESCARTES_BATTERY := 5500_mAh
+
+# Display specification
+DESCARTES_DISPLAY := 6.7_AMOLED_120Hz
+
+# Camera sensor resolutions (comma-separated for multi-lens setups)
+DESCARTES_CAMERA_REAR_INFO := 50,8
+DESCARTES_CAMERA_FRONT_INFO := 16
+
+# Build release type (OFFICIAL, UNOFFICIAL, NIGHTLY)
+DESCARTES_BUILD_TYPE := UNOFFICIAL
+
+# Enable GMS in the build
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
+
+# Face Unlock (Biometrics)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Device as USB Webcam (UVC)
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
+# Quick Tap gesture support (Columbus)
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Hardware and window blur effects
+TARGET_ENABLE_BLUR := true
+
+# Disable MatLog logging prebuilt
+TARGET_DISABLE_MATLOG := true
+
 PRODUCT_NAME := lineage_benz
 PRODUCT_DEVICE := benz
 PRODUCT_MANUFACTURER := OnePlus
